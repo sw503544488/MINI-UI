@@ -1,12 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import {HashRouter as Router, NavLink, Route} from 'react-router-dom';
-import DialogExample from './lib/dialog/dialog.example';
 import ButtonExample from './lib/button.example';
-import LayoutExample from './lib/layout/layout.example';
 import {Aside, Content, Footer, Header, Layout} from './lib/layout/layout';
 import './example.scss';
 import IconDemo from './lib/icon/icon.demo';
+import LayoutDemo from './lib/layout/layout.demo';
+import DialogDemo from './lib/dialog/dialog.demo';
 
 
 const logo = require('./logo2.png');
@@ -22,7 +22,7 @@ ReactDOM.render(
       </Header>
       <Layout>
         <Aside className="site-aside">
-          <h2>组件</h2>
+          <h2><strong>组件</strong></h2>
           <ul>
             <li>
               <NavLink to="/icon">Icon</NavLink>
@@ -38,8 +38,8 @@ ReactDOM.render(
         <Content className="site-main">
           <Route path="/icon" component={IconDemo}/>
           <Route path="/button" component={ButtonExample}/>
-          <Route path="/dialog" component={DialogExample}/>
-          <Route path="/layout" component={LayoutExample}/>
+          <Route path="/dialog" component={DialogDemo}/>
+          <Route path="/layout" component={LayoutDemo}/>
         </Content>
       </Layout>
       <Footer className="site-footer">

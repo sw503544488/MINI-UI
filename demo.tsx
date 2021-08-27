@@ -4,6 +4,7 @@ import {useState} from 'react';
 
 interface Props {
   code: string;
+
 }
 
 const Demo: React.FunctionComponent<Props> = (props) => {

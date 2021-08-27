@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Dialog, {alert, confirm, modal} from './dialog';
+import './dialog.example.scss';
 
 export default function () {
   const [x, setX] = useState(false);
@@ -10,12 +11,11 @@ export default function () {
     </h1>);
   };
   return (
-    <div>
+    <main>
       <div>
         <h1>example 4</h1>
         <button onClick={openModal}>modal</button>
       </div>
-
       <div>
         <h1>example 3</h1>
         <button onClick={() => alert('1')}>alert</button>
@@ -27,8 +27,10 @@ export default function () {
         </button>
       </div>
 
-      <div style={{position: 'relative', zIndex: 10, border: '1px solid red', color: 'red'}}>
-        <h1>example 1</h1>
+      <div style={{
+        position: 'relative', zIndex: 10,
+      }}>
+        <h1>example 2</h1>
         <button onClick={() => setX(!x)}>click</button>
         <Dialog visible={x} buttons={
           [
@@ -42,7 +44,7 @@ export default function () {
 
 
       <div style={{position: 'relative', zIndex: 9}}>
-        <h1>example 2</h1>
+        <h1>example 1</h1>
         <button onClick={() => setY(!y)}>click</button>
         <Dialog visible={y} closeOnClickMask={true} buttons={
           [
@@ -55,6 +57,6 @@ export default function () {
       </div>
 
 
-    </div>
+    </main>
   );
 }

@@ -4,17 +4,20 @@
   margin: 4px 0;
   color: white;
 }
+
 .y {
   background: lighten(#4285f4, 5%);
   margin: 4px 0;
   color: white;
 }
+
 .z {
   background: #34a853;
-  width: 100px;
+  //width: 100px;
   margin: 4px 0;
   color: white;
 }
+
 .z + .y, .y + .z, .z + .gu-layout {
   margin-left: 8px;
 }

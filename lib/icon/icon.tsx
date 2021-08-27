@@ -11,11 +11,14 @@ const Icon: React.FunctionComponent<IconProps> =
   ({className, name, ...restProps}) => {
 
     return (
-      <svg className={classes('fui-icon', className)}
-           {...restProps}
-      >
-        <use xlinkHref={`#${name}`}/>
-      </svg>
+      <div className='mini-icon'>
+
+        <svg className={classes('fui-icon', className)}
+             {...restProps}
+        >
+          <use xlinkHref={`#${name}`}/>
+        </svg>
+      </div>
     );
   };
 

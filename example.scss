@@ -91,6 +91,7 @@ body {
         &.active {
           color: white;
           background: $main-color;
+
         }
       }
     }
@@ -107,4 +108,35 @@ body {
 
 .example {
   padding: 16px 0;
+}
+
+.prism-code.language-jsx {
+  border: 15px solid rgb(42, 39, 52);
+  max-width: 600px;
+  margin: 10px 0 0 10px;
+  position: relative;
+  display: block;
+  padding: 16px;
+  overflow-x: auto;
+  color: #58727e;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Source Code Pro', 'Monaco', 'Inconsolata', monospace;
+  line-height: 26px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background-color: #fafafa;
+  border-radius: 16px;
+}
+
+.mini-icon {
+  display: inline-block;
+  float: none;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+
+  & > svg {
+    margin: 8px;
+  }
 }
