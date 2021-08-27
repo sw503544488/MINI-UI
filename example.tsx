@@ -1,23 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {HashRouter as Router, Route, NavLink} from 'react-router-dom';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import {HashRouter as Router, NavLink, Route} from 'react-router-dom';
 import DialogExample from './lib/dialog/dialog.example';
 import ButtonExample from './lib/button.example';
 import LayoutExample from './lib/layout/layout.example';
-import {Layout, Aside, Header, Content, Footer} from './lib/layout/layout';
+import {Aside, Content, Footer, Header, Layout} from './lib/layout/layout';
 import './example.scss';
 import IconDemo from './lib/icon/icon.demo';
 
 
-const logo = require('./logo.png');
+const logo = require('./logo2.png');
 
 ReactDOM.render(
   <Router>
     <Layout className="site-page">
       <Header className="site-header">
         <div className="logo">
-          <img src={logo} width="48" height="48" alt=""/>
-          <span> FUI </span>
+          <img src={logo} width="164" alt=""/>
+          {/*<span> FUI </span>*/}
         </div>
       </Header>
       <Layout>
@@ -43,7 +43,7 @@ ReactDOM.render(
         </Content>
       </Layout>
       <Footer className="site-footer">
-        &copy; 方应杭
+        &copy; 商伟
       </Footer>
     </Layout>
   </Router>
